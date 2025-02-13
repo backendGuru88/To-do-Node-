@@ -13,9 +13,9 @@
       }
     ],
     "functions": {
-      "pages/api/**/*": {
-        "maxDuration": 5
+      "app.js": {
+        "maxDuration": 10
       }
     }
   }
-  
+      
