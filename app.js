@@ -25,14 +25,13 @@
 // // Server Configuration
 // const PORT = process.env.PORT || 3000;
 // app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
-
 const express = require("express");
 const mongoose = require("mongoose");
 
 const app = express();
 
 // MongoDB Connection
-const MONGO_URI = "mongodb+srv://lola:Oluwafunmilola200611@cluster0.1bv9e.mongodb.net/todo_db";
+const MONGO_URI = process.env.MONGODB_URI || "mongodb+srv://lola:Oluwafunmilola200611@cluster0.1bv9e.mongodb.net/todo_db";
 
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
